@@ -3,10 +3,9 @@ import psutil
 
 
 def check_server_disk():
-    path = '/home/jie/'
+    path = '/home/jenkins/'
     st = os.statvfs(path)
     free = st.f_bfree/st.f_blocks * 100
-    print(free)
 
 
 def check_cpu():
