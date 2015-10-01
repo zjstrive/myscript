@@ -3,7 +3,7 @@ import psutil
 
 
 def check_server_disk():
-    path = '/home/jenkins/'
+    path = '/var/lib/jenkins/'
     st = os.statvfs(path)
     free = st.f_bfree/st.f_blocks * 100
 
